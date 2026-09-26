@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Order matters: main.js uses functions from the other three -->
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/render.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>Habit Tracker</h1>
+        <p class="tagline">Small things, every day.</p>
+      </header>
+
+      <form id="add-habit-form">
+        <label for="habit-name">New habit</label>
+        <div class="form-row">
+          <input
+            id="habit-name"
+            name="habitName"
+            type="text"
+            maxlength="60"
+            placeholder="e.g. Read 20 mins"
+            required
+          />
+          <button type="submit" class="add-button">Add</button>
+        </div>
+      </form>
+
+      <div class="search">
+        <label for="search-input">Search habits</label>
+        <input id="search-input" type="search" placeholder="Search..." />
+      </div>
+
+      <p id="empty-message">No habits yet. Add one above.</p>
+
+      <ul id="habit-list"></ul>
+
+      <nav id="pagination" aria-label="Pages">
+        <button type="button" id="prev-button" class="page-button">
+          Previous
+        </button>
+        <span id="page-info"></span>
+        <button type="button" id="next-button" class="page-button">Next</button>
+      </nav>
+    </main>
+  </body>
+</html>
