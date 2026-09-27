@@ -6,8 +6,6 @@ You add habits you want to do every day, like "Read 20 mins" or "Drink water". E
 
 Your habits are saved in your browser, so they're still there when you come back.
 
-![Screenshot of the habit tracker](screenshot.png)
-<!-- TODO: add a screenshot -->
 
 ## Features
 - Add a habit
